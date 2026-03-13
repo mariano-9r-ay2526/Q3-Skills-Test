@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(160, 175, 165);
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+.container {
+    background-color: beige;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Q3 Skills Test</title>
+
+</head>
+<body>
+
+    <!-- START OF CONTAINER -->
+    <div class="container">
+        <header>
+            <h1>CineSophia Tickets</h1>
+        </header>
+
+        <form id="ticketForm">
+            <section>
+                <h3>Student Details</h3>
+                <div class="input-group">
+                    <label for="fname1">Full Name:</label>
+                    <input type="text" id="fname1" name="fname1">
+                </div>
+
+                <h4>Ticket Sale</h4>
+                <div class="input-group">
+                    <label for="qty1">Quantity:</label>
+                    <input type="number" id="qty1" name="qty" min="0" value="0">
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="container-md">
+                <h3>Payment Details</h3>
+
+                <div class="input-group">
+                    <label for="subt1">Subtotal:</label>
+                    <input type="number" id="subt1" name="subtotal" readonly>
+                </div>
+
+                <div class="input-group">
+                    <label for="adminf">Admin Fee:</label>
+                    <input type="number" id="adminf" name="adminFee" readonly>
+                </div>
+
+                <div class="input-group">
+                    <label for="total">Total:</label>
+                    <input type="number" id="total" name="total" readonly>
+                    <br>
+                    <br>
+
+                    <button type="reset" class="btn-success" onclick="window.location.reload()">Reload</button>
+                    <button type="button" class="btn-success" onclick="getTotal()" value="calculate">Calculate</button>
+
+
+
+                </div>
+            </section>
+        </form>
+    </div>
+
+<!-- END OF CONTAINER -->
+
+
+</body>
+</html>
+<script src="main.js"></script>
